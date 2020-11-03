@@ -128,7 +128,7 @@ public class CommonFriends {
         job2.waitForCompletion(true);
 
 
-        //FileSystem.get(conf).delete(intermediatePath);
+        FileSystem.get(conf).delete(intermediatePath);
         System.exit(job1.waitForCompletion(true) ? 0 : 1);
     }
 }
